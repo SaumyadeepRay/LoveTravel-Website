@@ -298,7 +298,7 @@ h3 a {
 /* HEADER */
 
 .header {
-  background: var(--viridian-green);
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
   padding-block: 20px;
   min-height: 88px;
   /* overflow: hidden;  */
@@ -343,18 +343,8 @@ h3 a {
 .navbar {
   width: 100%;
   padding: 20px 10px;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-}
-
-.header.active .navbar {
   opacity: 1;
-  visibility: visible;
-  position: static;
-  z-index: 9;
-  background-color: hsl(180, 98%, 31%);
-  right: 0;
+  transition: var(--transition-1);
 }
 
 .navbar-list {
